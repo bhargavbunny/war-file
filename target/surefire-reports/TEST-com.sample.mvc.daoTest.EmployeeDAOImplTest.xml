@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="0" name="com.sample.mvc.daoTest.EmployeeDAOImplTest" time="0.099" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="c:\Program Files\Java\jdk1.8.0_111\jre\bin"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="c:/Users/bhargavko/Desktop/New folder (7)/EMS-app"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="c:\Users\bhargavko\Desktop\New folder (7)\EMS-app"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="c:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\BHARGA~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="d:/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="c:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\bhargavko\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Windows\System32;d:\sonar-scanner-2.8\bin;c:\Program Files\Java\jdk1.8.0_111\bin;d:\apache-maven-3.3.9\bin;d:\Ant\apache-ant-1.9.6-bin\apache-ant-1.9.6\bin;d:\atlassian-bamboo-5.14.4.1\bin;c:\Program Files (x86)\Groovy\Groovy-2.4.6\bin;d:\AndroidDemo\gradle-2.10\bin;c:\Program Files (x86)\Skype\Phone\;c:\Program Files\Apache Software Foundation\Tomcat 7.0\bin;c:\Program Files\nodejs\;c:\Program Files\dotnet\;c:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\Windows\system32\config\systemprofile\.dnx\bin;c:\Program Files\Microsoft DNX\Dnvm\;d:\sonar-scanner-2.8\bin;c:\Program Files\Java\jdk1.8.0_111\bin;c:\Users\bhargavko\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\bhargavko"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="bhargavko"/>
+    <property name="java.class.path" value="d:/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="c:\Program Files\Java\jdk1.8.0_111\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="c:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="c:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;c:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;c:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;c:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;c:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;c:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;c:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;c:\Program Files\Java\jdk1.8.0_111\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="d:\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.sample.mvc.daoTest.EmployeeDAOImplTest" name="listContactTest" time="0.041"/>
+  <testcase classname="com.sample.mvc.daoTest.EmployeeDAOImplTest" name="addEmployeeTest" time="0.001"/>
+  <testcase classname="com.sample.mvc.daoTest.EmployeeDAOImplTest" name="getEmployeebyIdTest" time="0.002"/>
+  <testcase classname="com.sample.mvc.daoTest.EmployeeDAOImplTest" name="deleteEmployeeTest" time="0.003"/>
+  <testcase classname="com.sample.mvc.daoTest.EmployeeDAOImplTest" name="updateEmployeeTest" time="0.001"/>
+</testsuite>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>EmployeeDAOImpl.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="right"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">EmployeeManagement</a> &gt; <a href="index.html" class="el_package">com.sample.mvc.dao</a> &gt; <span class="el_source">EmployeeDAOImpl.java</span></div><h1>EmployeeDAOImpl.java</h1><pre class="source lang-java linenums">package com.sample.mvc.dao;
+import com.sample.mvc.model.EmployeeCommand;
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+// Class started
+public class EmployeeDAOImpl implements EmployeeDAO{
+
+	@Autowired
+    private SessionFactory sessionFactory;
+	
+	public EmployeeDAOImpl() {
+<span class="fc" id="L16">		super();</span>
+		// Auto-generated constructor stub
+<span class="fc" id="L18">	}</span>
+
+	@Override
+	public void addEmployee(EmployeeCommand employee) {
+<span class="fc" id="L22">		 this.sessionFactory.getCurrentSession().save(employee);</span>
+<span class="fc" id="L23">	}</span>
+
+	@Override
+	public void deleteEmployee(Integer employeeId) {
+<span class="fc" id="L27">		EmployeeCommand employee = (EmployeeCommand) sessionFactory.getCurrentSession().load(EmployeeCommand.class, employeeId);</span>
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">        if (null != employee) {</span>
+<span class="fc" id="L29">            this.sessionFactory.getCurrentSession().delete(employee);</span>
+        }
+<span class="fc" id="L31">	}</span>
+	
+	@Override
+	public List&lt;EmployeeCommand&gt; listContact() {
+<span class="fc" id="L35">		  return sessionFactory.getCurrentSession().createQuery(&quot;from EmployeeCommand&quot;).list();</span>
+	}
+
+	@Override
+	public EmployeeCommand getEmployeebyId(Integer employeeId) {
+<span class="fc" id="L40">		EmployeeCommand empCmd = (EmployeeCommand) this.sessionFactory.getCurrentSession().get(EmployeeCommand.class, employeeId);</span>
+<span class="fc" id="L41">		return empCmd;</span>
+	}
+
+	@Override
+	public void updateEmployee(EmployeeCommand employeeCommand) {
+<span class="fc" id="L46">		this.sessionFactory.getCurrentSession().update(employeeCommand);</span>
+<span class="fc" id="L47">	}</span>
+
+	
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.5.10.201208310627</span></div></body></html>
